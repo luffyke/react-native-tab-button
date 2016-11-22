@@ -23,3 +23,6 @@ class AwesomeProject extends Component {
   }
 }
 ```
+
+### Example
+![tab button](./example.png)
