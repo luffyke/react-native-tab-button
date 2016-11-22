@@ -1,27 +1,26 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-
     container: {
         flex:1,
         backgroundColor: '#fff',
         flexDirection: 'column',
         height: 42,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderBottomWidth: 1,
+        borderBottomColor: '#ebf0e6'
     },
-
     textWrapper: {
         flex: 1,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        position: 'relative'
     },
-
     leftLabel: {
         flex: 1,
         fontSize: 16,
         color: "#4d4d4d",
         paddingLeft: 14
     },
-
     rightLabel: {
         flex: 1,
         fontSize: 16,
@@ -29,14 +28,10 @@ const styles = StyleSheet.create({
         paddingRight: 12,
         textAlign: 'right'
     },
-
     arrow: {
-        flex: 1,
-        paddingRight: 12,
-        width: 12,
-        height: 12
+        paddingRight: 14,
+        justifyContent: 'center'
     }
-
 });
 
 export default styles;

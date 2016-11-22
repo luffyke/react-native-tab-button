@@ -10,13 +10,11 @@ class TabButton extends Component {
         const { leftLabel, onPress, rightLabel } = this.props;
         return (
             <View style={styles.container}>
-                <TouchableOpacity underlayColor="rgba(0,0,0, .1)" disabled={onPress ? false : true } onPress={onPress}>
+                <TouchableOpacity disabled={onPress ? false : true } onPress={onPress}>
                     <View style={styles.textWrapper}>
                         <Text style={styles.leftLabel}>{leftLabel}</Text>
-                        <Text style={styles.rightLabel}>
-                            {rightLabel}
-                            {onPress ? <Image source={require('./img/arrow-link.png')} style={styles.arrow}/> : null}
-                        </Text>
+                        {rightLabel ? <Text style={styles.rightLabel}>{rightLabel}</Text>: null}
+                        {onPress ? <View style={styles.arrow}><Image source={require('./img/arrow.png')}/></View> : null}
                     </View>
                 </TouchableOpacity>
             </View>
