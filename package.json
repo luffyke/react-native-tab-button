@@ -1,0 +1,23 @@
+{
+  "name": "react-native-tab-button",
+  "version": "0.1.0",
+  "description": "react native tab button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luffyke/react-native-tab-button.git"
+  },
+  "keywords": [
+    "tab",
+    "button"
+  ],
+  "author": "kext",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/luffyke/react-native-tab-button/issues"
+  },
+  "homepage": "https://github.com/luffyke/react-native-tab-button#readme"
+}
