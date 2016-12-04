@@ -25,4 +25,5 @@ class AwesomeProject extends Component {
 ```
 
 ### Example
-![tab button](./example.png)
+<!--![tab button](./example.png)-->
+<img src="./example.png" width="50%" height="50%">
