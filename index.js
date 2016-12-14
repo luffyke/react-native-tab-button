@@ -7,13 +7,13 @@ import styles from './style';
 
 class TabButton extends Component {
     render() {
-        const { leftLabel, onPress, rightLabel } = this.props;
+        const { leftLabel, customStyle, onPress, rightLabel } = this.props;
         return (
             <View style={styles.container}>
                 <TouchableOpacity disabled={onPress ? false : true } onPress={onPress}>
                     <View style={styles.textWrapper}>
-                        <Text style={styles.leftLabel}>{leftLabel}</Text>
-                        {rightLabel ? <Text style={styles.rightLabel}>{rightLabel}</Text>: null}
+                        <Text style={customStyle ? (customStyle.leftLabel ? customStyle.leftLabel : styles.leftLabel) : styles.leftLabel}>{leftLabel}</Text>
+                        {rightLabel ? <Text style={customStyle ? (customStyle.rightLabel ? customStyle.rightLabel : styles.rightLabel) : styles.rightLabel}>{rightLabel}</Text>: null}
                         {onPress ? <View style={styles.arrow}><Image source={require('./img/arrow.png')}/></View> : null}
                     </View>
                 </TouchableOpacity>
@@ -24,6 +24,7 @@ class TabButton extends Component {
 
 TabButton.properties = {
     leftLabel: PropTypes.string.isRequired,
+    customStyle: PropTypes.StyleSheet,
     onPress: PropTypes.string,
     rightLabel: PropTypes.string,
 };
