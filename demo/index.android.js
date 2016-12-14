@@ -13,14 +13,14 @@ import {
 } from 'react-native';
 
 import TabButton from 'react-native-tab-button';
-//import TabButton from '../index';
+import mystyle from './mystyle';
 
 class AwesomeProject extends Component {
   render() {
     return (
         <View style={styles.container}>
             <TabButton leftLabel="Update Version" onPress={this._doUpgrade} rightLabel="1.0" />
-            <TabButton leftLabel="About us" />
+            <TabButton leftLabel="About us" customStyle={mystyle} />
         </View>
     );
   }
