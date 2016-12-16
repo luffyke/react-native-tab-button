@@ -1,6 +1,6 @@
 {
   "name": "react-native-tab-button",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "react native tab button",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "tab",
-    "button"
+    "button",
+    "tab item"
   ],
   "author": "kext",
   "license": "Apache-2.0",
