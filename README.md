@@ -1,4 +1,5 @@
 ## react-native-tab-button
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ### Installation
 ```
@@ -50,6 +51,3 @@ View demo folder for more details.
 ### Demo
 <!--![tab button](./example.png)-->
 <img src="./demo/demo.png" width="50%" height="50%">
-
-### License
-Apache License V2
